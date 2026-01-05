@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { HeroTravelAnimation } from "./animations/HeroTravelAnimation";
 import { motion } from "motion/react";
-const profileImage = "app/components/figma/asset/profile.jpg";
+const profileImage = "/asset/profile.jpg";
 
 export function Hero() {
   const { t } = useLanguage();
