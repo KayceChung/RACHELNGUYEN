@@ -1,7 +1,7 @@
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { MapPin, Users, Star, CheckCircle } from "lucide-react";
-import travelImage from "figma:asset/8d9c74d0a4246c0698528064b2dafad914b5065c.png";
+const travelImage = "/RACHELNGUYEN/asset/z7399693833478_e40ce35126c165fa0528ed2d2af5d8db.jpg";
 
 export function Portfolio() {
   const caseStudies = [

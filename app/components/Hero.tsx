@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { HeroTravelAnimation } from "./animations/HeroTravelAnimation";
 import { motion } from "motion/react";
-const profileImage = "/asset/profile.jpg";
+const profileImage = "/RACHELNGUYEN/asset/z7399537876990_a92740fa8602b70e2ef0d9f6bed14c0e.jpg";
 
 export function Hero() {
   const { t } = useLanguage();

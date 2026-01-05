@@ -5,8 +5,8 @@ import { TravelPath } from "./animations/TravelPath";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-const travelImage1 = "/asset/z7399537876990_a92740fa8602b70e2ef0d9f6bed14c0e.jpg";
-const travelImage2 = "/asset/z7399691135356_ff0ee34886ef763f9ebf0544d575b6b2.jpg";
+const travelImage1 = "/RACHELNGUYEN/asset/z7399537876990_a92740fa8602b70e2ef0d9f6bed14c0e.jpg";
+const travelImage2 = "/RACHELNGUYEN/asset/z7399691135356_ff0ee34886ef763f9ebf0544d575b6b2.jpg";
 
 // Focus areas data
 const focusAreas = [
