@@ -5,8 +5,8 @@ import { TravelPath } from "./animations/TravelPath";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-import travelImage1 from "figma:asset/39983172d9ad2a39a80a2df4bd0f58ff44fe87f8.png";
-import travelImage2 from "figma:asset/3f2add68ed07cc6e18994675bf827cdfd9418513.png";
+const travelImage1 = "app/components/figma/asset/z7399537876990_a92740fa8602b70e2ef0d9f6bed14c0e.jpg";
+const travelImage2 = "app/components/figma/asset/z7399691135356_ff0ee34886ef763f9ebf0544d575b6b2.jpg";
 
 // Focus areas data
 const focusAreas = [
@@ -70,7 +70,7 @@ export function About() {
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={typeof window === 'undefined' || isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.6, 0.05, 0.01, 0.99] }}
           className="text-center mb-20"
         >
@@ -95,7 +95,7 @@ export function About() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          animate={typeof window === 'undefined' || isInView ? "visible" : "hidden"}
           className="grid md:grid-cols-3 gap-8 mb-24"
         >
           {focusAreas.map((area, index) => {
@@ -124,7 +124,7 @@ export function About() {
         {/* Travel Experience Gallery */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={typeof window === 'undefined' || isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-28"
         >
@@ -143,7 +143,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              animate={typeof window === 'undefined' || isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
               className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700"
             >
@@ -163,7 +163,7 @@ export function About() {
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              animate={isInView ? { opacity: 1, x: 0 } : {}}
+              animate={typeof window === 'undefined' || isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.8, duration: 0.8 }}
               className="group relative overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700"
             >
@@ -186,7 +186,7 @@ export function About() {
         {/* Mission Statement */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={typeof window === 'undefined' || isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1, duration: 0.8 }}
           className="mt-24 max-w-4xl mx-auto text-center"
         >

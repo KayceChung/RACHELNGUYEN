@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { motion } from "motion/react";
 import { AnimatedWaves } from "./animations/AnimatedWaves";
 import { FloatingParticles } from "./animations/FloatingParticles";
-import travelImage from "figma:asset/8d9c74d0a4246c0698528064b2dafad914b5065c.png";
+const travelImage = "app/components/figma/asset/z7399693833478_e40ce35126c165fa0528ed2d2af5d8db.jpg";
 
 interface PortfolioPageProps {
   onNavigateHome: () => void;
