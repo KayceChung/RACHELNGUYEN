@@ -5,8 +5,8 @@ import { TravelPath } from "./animations/TravelPath";
 import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
-const travelImage1 = "https://placehold.co/600x400?text=Travel+1";
-const travelImage2 = "https://placehold.co/600x400?text=Travel+2";
+import travelImage1 from "figma:asset/39983172d9ad2a39a80a2df4bd0f58ff44fe87f8.png";
+import travelImage2 from "figma:asset/3f2add68ed07cc6e18994675bf827cdfd9418513.png";
 
 // Focus areas data
 const focusAreas = [

@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { motion } from "motion/react";
 import { AnimatedWaves } from "./animations/AnimatedWaves";
 import { FloatingParticles } from "./animations/FloatingParticles";
-const travelImage = "https://placehold.co/600x400?text=Travel+Image";
+import travelImage from "figma:asset/8d9c74d0a4246c0698528064b2dafad914b5065c.png";
 
 interface PortfolioPageProps {
   onNavigateHome: () => void;

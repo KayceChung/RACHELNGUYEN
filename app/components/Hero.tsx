@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { HeroTravelAnimation } from "./animations/HeroTravelAnimation";
 import { motion } from "motion/react";
-const profileImage = "https://placehold.co/300x300?text=Profile";
+import profileImage from "figma:asset/a79af8c8f1a5a895097554a78bfad89af01dfcc2.png";
 
 export function Hero() {
   const { t } = useLanguage();

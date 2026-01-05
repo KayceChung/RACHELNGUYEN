@@ -141,7 +141,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="flex flex-wrap gap-4 justify-center mb-12"
+          className="flex flex-wrap gap-4 justify-center"
         >
           <Button
             asChild
@@ -165,29 +165,6 @@ export function Contact() {
             </a>
           </Button>
         </motion.div>
-
-        {/* Formspree Contact Form */}
-        <form
-          action="https://formspree.io/f/mnjnwgan"
-          method="POST"
-          className="max-w-xl mx-auto bg-white/80 rounded-2xl p-8 shadow-xl backdrop-blur-md mb-12"
-          style={{ fontFamily: 'var(--font-body)' }}
-        >
-          <h3 className="text-xl font-semibold mb-6 text-[#1F2933]">Liên hệ trực tuyến</h3>
-          <div className="mb-4 text-left">
-            <label htmlFor="name" className="block mb-1 font-medium">Họ tên</label>
-            <input type="text" id="name" name="name" required className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4FB6C6]" />
-          </div>
-          <div className="mb-4 text-left">
-            <label htmlFor="email" className="block mb-1 font-medium">Email</label>
-            <input type="email" id="email" name="email" required className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4FB6C6]" />
-          </div>
-          <div className="mb-4 text-left">
-            <label htmlFor="message" className="block mb-1 font-medium">Nội dung</label>
-            <textarea id="message" name="message" rows={4} required className="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4FB6C6]" />
-          </div>
-          <button type="submit" className="w-full bg-[#4FB6C6] text-white py-3 rounded font-semibold hover:bg-[#3A9AAA] transition-colors">Gửi liên hệ</button>
-        </form>
 
         <motion.div
           initial={{ opacity: 0 }}
