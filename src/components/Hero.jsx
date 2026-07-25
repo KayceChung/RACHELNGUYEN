@@ -35,8 +35,8 @@ export default function Hero() {
           <div className="flex gap-md pt-sm">
             <motion.a
               {...press}
-              href="assets/Nguyen-Thi-Thao-Nhi-CV.pdf"
-              download
+              href="/Nguyen-Thi-Thao-Nhi-CV.pdf"
+              download="Nguyen-Thi-Thao-Nhi-CV.pdf"
               className="bg-tertiary text-white font-utility text-[13px] tracking-wide rounded-full px-lg py-md shadow-softer hover:opacity-90 transition-opacity w-fit"
             >
               DOWNLOAD CV
