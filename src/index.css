@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* Rosewood palette — warm terracotta accent on cream, softer than the original flat petrol/teal system */
+  --color-primary: #3F2A22;
+  --color-secondary: #8A6F63;
+  --color-tertiary: #A8514B;
+  --color-tertiary-soft: #C9847C;
+  --color-background: #FFFDFB;
+  --color-surface: #FBF1EA;
+  --color-surface-variant: #F4DED4;
+  --color-outline: #EAD9CF;
+  --color-on-surface-variant: #6B5750;
+
+  --font-display: "Archivo Narrow", sans-serif;
+  --font-headline: "Archivo Narrow", sans-serif;
+  --font-utility: "IBM Plex Mono", monospace;
+  --font-body: "Source Serif 4", serif;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-gutter: 24px;
+  --spacing-margin: 32px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+
+  --shadow-soft: 0 12px 32px -16px rgba(107, 58, 45, 0.28);
+  --shadow-softer: 0 4px 16px -6px rgba(107, 58, 45, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
